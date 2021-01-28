@@ -7,12 +7,19 @@ import Button from "./Button";
 const WorkloadFormStyled = styled.div`
   position: sticky;
   top: 0;
+  @media (max-width:576px){
+    h2{
+      padding-left: ${({ theme }) => theme.sizes.padding}px;
+      padding-right: ${({ theme }) => theme.sizes.padding}px;
+    }
+  }
 `;
 
 const WorkloadListStyled = styled.form`
   background-color: ${({ theme }) => theme.color.soft.blue};
   padding: ${({ theme }) => theme.sizes.padding}px;
 `;
+
 const RangeWrapper = styled.div`
   width: 100%;
 `;

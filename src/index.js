@@ -48,6 +48,9 @@ const GlobalStyle = createGlobalStyle`
   .App{
     width: 70%;
     margin: auto;
+    @media (max-width:576px){
+      width: 95%;
+    }
   }
 `;
 

@@ -8,6 +8,9 @@ const WorkloadListStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
   grid-gap: ${({ theme }) => theme.sizes.padding}px;
+  @media (max-width:576px){
+    grid-template-columns: repeat(1,minmax(100%,1fr));
+  }
 `;
 
 const EmptyList = styled.div`
